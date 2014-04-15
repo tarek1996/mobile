@@ -1,42 +1,93 @@
 <!DOCTYPE html>
-<!--
-    Licensed to the Apache Software Foundation (ASF) under one
-    or more contributor license agreements.  See the NOTICE file
-    distributed with this work for additional information
-    regarding copyright ownership.  The ASF licenses this file
-    to you under the Apache License, Version 2.0 (the
-    "License"); you may not use this file except in compliance
-    with the License.  You may obtain a copy of the License at
-
-    http://www.apache.org/licenses/LICENSE-2.0
-
-    Unless required by applicable law or agreed to in writing,
-    software distributed under the License is distributed on an
-    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-     KIND, either express or implied.  See the License for the
-    specific language governing permissions and limitations
-    under the License.
--->
 <html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <meta name="format-detection" content="telephone=no" />
-        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
-        <link rel="stylesheet" type="text/css" href="css/index.css" />
-        <title>Hello World!</title>
-    </head>
-    <body>
-        <div class="app">
-            <h1>Apache Cordova</h1>
-            <div id="deviceready" class="blink">
-                <p class="event listening">Connecting to Device</p>
-                <p class="event received">Device is Ready</p>
-            </div>
-        </div>
-        <script type="text/javascript" src="cordova.js"></script>
-        <script type="text/javascript" src="js/index.js"></script>
-        <script type="text/javascript">
-            app.initialize();
-        </script>
-    </body>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Muhammad Ali - www.ali.com</title>
+        <link rel="stylesheet" type="text/css" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css">
+        <link rel="stylesheet" type="text/css" href="css/perfil.css">
+    </head>
+    <body>
+    <!-- pagina con resumen personal -->
+        <div data-role="page" id="info">
+            <div data-role="header">
+                <h1>Muhammad Ali</h1>
+            </div>
+            <div data-role="content">
+                <div style="text-align:center">
+                    <img src="http://4.bp.blogspot.com/-xWPkx39ByUU/TegnftqHg6I/AAAAAAAAAQI/dX3L0OlO1p0/s1600/Muhammad-Ali.jpg" alt="Muhammad Alí">
+                </div>
+                
+                <p style="text-align:center">Durante quince años, Muhammad Alí dominó el mundo del boxeo. Pero debido a su talento y su carisma, su influencia se extendió bastante más allá del «noble arte». Sus puntos de vista y sus extravagancias lo convirtieron en un hombre respetado y admirado.</p>
+               
+                <p style="text-align:center">Su Página Oficial <a href="http://www.ali.com">www.ali.com</a></p>.
+                
+                <ul data-role="listview" data-inset="true">
+                    <li><a href="#Biografia" data-transition="flip">Biografia</a></li>
+                    <li><a href="#Logos" data-transition="flip">Logos</a></li>
+                    <li><a href="#Récord profesional" data-transition="flip">Récord profesional</a></li>
+                </ul>
+            </div>
+            <div data-role="footer">
+                <p style="text-align:center">Copyright &copy; 2014</p>
+            </div>
+        </div>
+    <!-- pagina de Biografia  -->
+        <div data-role="page" id="Biografia">
+            <div data-role="header">
+                <h1>Biografia</h1>
+            </div>
+            <div data-role="content">
+                <p style="text-align:center"> Nació el 17 de enero de 1942 en Louisville, Kentucky.</p>
+                <div style="text-align:center"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyZ8OgS4kr0iULg1s5-Dp4W1yFi7jZI_VeZVBwJOH3plVvVIgDEw"></div>
+                <p style="text-align:center"> Alí empezó a pelear desde los 12 años en torneos amateurs. Después de ganar el título de los pesos ligeros en los Juegos Olímpicos de 1960, se pasó al campo profesional y en el año 1964 reivindicó su condición de ser el mejor.</p>
+                <div style="text-align:center"><img src="http://www.quadrodemedalhas.com/images/olimpiadas/medalha-olimpiadas-1960-r.jpg"></div>
+                <p style="text-align:center">
+                    <a href="#info" data-role="button" data-icon="back"
+                    data-inline="true" data-transition="flow">Atr&aacute;s</a>
+                </p>
+            </div>
+            <div data-role="footer">
+                <P ALIGN=center>Copyright &copy; 2014</P>
+            </div>
+        </div>
+    <!-- pagina de Logos -->
+        <div data-role="page" id="Logos">
+            <div data-role="header">
+                <h1>Logos</h1>
+            </div>
+            <div data-role="content">
+                <P ALIGN=center>El récord de Muhammad Ali como boxeador profesional terminó en 56 victorias, 37 de ellas por la vía del nocaut y 19 por decisión; mientras que acumuló cinco derrotas, cuatro de ellas por decisión y una por nocaut técnico. Durante su carrera fue reconocido por la revista The Ring como el campeón indiscutido de los pesos pesados entre los años 1964-1971, 1974-1978, y 1978-1980; y seis de sus combates fueron considerados como los mejores del año por ese mismo medio de comunicación: en 1963 contra Doug Jones; en 1964 contra Sonny Liston; en 1971 contra Joe Frazier; en 1974 contra George Foreman; en 1975 contra Joe Frazier; y 1978 contra Leon Spinks.</P>
+                <div ALIGN=center><img src="http://pictures2.todocoleccion.net/tc/2012/08/06/32756701.jpg"></div>
+                
+                <P ALIGN=center>
+                    <a href="#info" data-role="button" data-icon="back"
+                    data-inline="true" data-transition="turn">Atr&aacute;s</a>
+                </P>
+            </div>
+            <div data-role="footer">
+                <P ALIGN=center>Copyright 2014</P>
+            </div>
+        </div>
+        
+    	 <!-- Récord profesional -->
+		<div data-role="page" id="Récord profesional">
+
+		<div data-role="header">
+		<h1>Récord profesional</h1>
+		</div><!-- /header -->
+
+		<div data-role="content">	
+			<p>Con 18 años y siendo todavía amateur consigue su primer gran éxito al ganar la medalla de oro del peso semipesado en los Juegos Olímpicos de Roma 1960. Este logro le hace volcarse en el profesionalismo de la mano del mítico entrenador Angelo Dundee. Durante sus primeros años como profesional ganó numerosos combates, casi todos por KO, y forjó su carácter.</p>		
+			<div ALIGN=center><img src="http://img01.mundodeportivo.com/2012/11/08/Campeon-olimpico-en-Roma-1960_54354309752_51356729138_352_256.jpg?t=1352393331174"></div>
+			<p></p>	
+		</div><!-- /content -->
+
+			<div data-role="Récord profesional">
+			<h4>Page Footer</h4>
+			</div><!-- /header -->
+		</div><!-- /page -->  
+        
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+    </body>
 </html>
